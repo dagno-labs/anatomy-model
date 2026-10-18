@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@dagno/anatomy-model",
+  "version": "0.1.0",
+  "description": "The BodyParts3D adult male reference anatomy, prepared for Anatomy Engine.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "anatomy",
+    "bodyparts3d",
+    "3d",
+    "model"
+  ],
+  "homepage": "https://github.com/dagno-labs/anatomy-model#readme",
+  "bugs": {
+    "url": "https://github.com/dagno-labs/anatomy-model/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dagno-labs/anatomy-model.git"
+  },
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    "./model/*": "./model/*"
+  },
+  "files": [
+    "model",
+    "ATTRIBUTION.md"
+  ],
+  "packageManager": "pnpm@12.14.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "format": "biome check --write",
+    "lint": "biome check",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "~26.6.5",
+    "typescript": "~7.0.2"
+  },
+  "volta": {
+    "node": "24.22.0",
+    "pnpm": "12.14.0"
+  }
+}
