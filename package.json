@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@dagno/anatomy-model",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The BodyParts3D adult male reference anatomy, prepared for Anatomy Engine.",
   "license": "CC-BY-4.0",
   "keywords": [
